@@ -1,6 +1,6 @@
 h1 {
     font-size: 60px;
-    
+    text-shadow: black 3px 3px 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;            
     margin-top: 5px;
@@ -18,8 +18,10 @@ nav{
     margin-top: 20px;
     padding: 5px;
     
-    border-radius: 5px;
-    background-color: aliceblue;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 5px 5px 10px, 
+                5px 5px 10px;
 }
 
 footer{
@@ -27,20 +29,66 @@ footer{
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: #dd78d2;
 }
 /*decoration for all banners*/
 .banner{
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 184, 69);
+    background-color: #562057;
     padding: 10px;
     border: solid 3px black;
     align-items: center;
 }
+/*Navigation text decoration*/
+nav a{
+    text-decoration: none;
+    color: rgb(51, 162, 253);
+    text-shadow: 0px 0px 5px,
+                0px 0px 5px;
+}
 
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(245, 36, 36);
+    text-shadow: 0px 0px 5px,
+                0px 0px 5px;
+}
+/*Logo sizing*/
 .banner img {
         height: 100px;
         width: auto;
         max-width: 100%;
+}
+
+footer{
+    background-color: #562057;
+    color: white;
+    padding-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+#logoText:hover {
+    color: white;
+    text-shadow: 0px 0px 5px,
+                0px 0px 5px;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*This styles the main headline which use h2*/
+.headline{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1px;
+    margin-bottom: 20px;
 }
