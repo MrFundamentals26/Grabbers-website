@@ -95,6 +95,14 @@ Homepage -> Products, About, Enquiry, Contact, Special Orders
 
 -Moved navigation on home page to the right side
 
+-Changed call to action button to be fancier
+
+-Chose a purple and pink color scheme
+
+-Website name glows when hovered over and functions as a return back to the home page
+
+-Added icon on tabs
+
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
 Available at: https://corporatefinanceinstitute.com/resources/management/mission-statement/ 
