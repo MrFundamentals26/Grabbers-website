@@ -144,5 +144,8 @@ Just Nails, 2026. luxury Nails with golden touch. [Online]
 Available at: https://pin.it/1WcjhWLTJ
 [Accessed 15 September 2026].
 
+w3 Schools, 2026. HTML Background Images. [Online] 
+Available at: https://www.w3schools.com/htmL/html_images_background.asp#:~:text=To%20add%20a%20background
+[Accessed 15 September 2026].
 
 
