@@ -111,6 +111,8 @@ Homepage -> Products, About, Enquiry, Contact, Special Orders
 
 -Changed logo
 
+-Added universal background
+
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
 Available at: https://corporatefinanceinstitute.com/resources/management/mission-statement/ 
