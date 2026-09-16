@@ -158,4 +158,10 @@ w3 Schools, 2026. HTML Background Images. [Online]
 Available at: https://www.w3schools.com/htmL/html_images_background.asp#:~:text=To%20add%20a%20background
 [Accessed 15 September 2026].
 
+Magnific, 2026. Instagram icon. [Online]
+Available at: https://www.flaticon.com/free-icons/instagram-logo" 
+[Accessed 16 September 2026].
 
+Magnific, 2026. Tiktok icon. [Online]
+Available at: https://www.flaticon.com/free-icons/tik-tok" 
+[Accessed 16 September 2026].
