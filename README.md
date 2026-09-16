@@ -1,5 +1,5 @@
 # Grabbers-website
-This repository is made to store files and code for a fictional business named Bronana Bread which will be my assignment for WEDE5020
+This repository is made to store files and code for a website for a nearby nail salon called Grabbers which will be my assignment for WEDE5020
 
 # Student information
 ST10480197
