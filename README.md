@@ -21,13 +21,13 @@ The website will have 5 pages:
 
 Homepage – This will be the main page of the website which all visitors will see first. It will have the hero section which will showcase the main purpose of the business and a call to action. It will also serve as the center of navigating the website. 
 
-About us page – This page will have information about the history and process of the business such as how the business started and how they bake their products and even information about the founder so that visitors can be invested in the business. 
+About us page – This page will have information about the history and process of the business such as how the business started and what and why they offer what they offer and even information about the founder so that visitors can be invested in the business. 
 
 Services page – This page will showcase all the available services the business sells so that the customers can make their choice as to which they want to buy. 
 
-Enquiry – This is a page where customers will ask for information either about the business itself or the products it offers such as how many calories does a coffee pancake contain or if the ingredients used are vegan. 
+Enquiry – This is a page where customers will ask for information either about the business itself or the services they can provide and check if the salon will be willing to do certain designs.
 
-Contact page – This page will house all available contact information where it's for ordering products or customer service. 
+Contact page – This page will house all available contact information where it's for booking a service or customer service. 
 
 # Timeline and Milestones 
 
@@ -45,10 +45,10 @@ Unknown date November 2026 – Website is launched.
 2 proposals were created for different businesses to propose websites for them. A website will be created for one of the businesses. Part 1 focuses on the foundation of the website's structure. HTML structure is created and information about the website is put into the website. Then the whole project is uploaded into GitHub.
 
 # Part 2 details
-Part 2 focuses on CSS and styling the web pages and adding more content.
+Part 2 focuses on CSS and styling the web pages and adding more content. the website will be designed for usability and attention catching.
 
 # Sitemap
-Homepage -> Products, About, Enquiry, Contact, Special Orders
+Homepage -> Services, About, Enquiry, Contact
 
 # Changelog
 -Added the first 6 pages of the website along with the hero image
@@ -112,6 +112,14 @@ Homepage -> Products, About, Enquiry, Contact, Special Orders
 -Changed logo
 
 -Added universal background
+
+-Removed the 6th special orders page
+
+-Added descriptions to the home page
+
+-Changed background color (again)
+
+-Added links to Grabbers' social media
 
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
