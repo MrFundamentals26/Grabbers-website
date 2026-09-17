@@ -125,6 +125,8 @@ Homepage -> Services, About, Enquiry, Contact
 
 -Added picture of founder
 
+-Added slideshow of nails on the services page
+
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
 Available at: https://corporatefinanceinstitute.com/resources/management/mission-statement/ 
