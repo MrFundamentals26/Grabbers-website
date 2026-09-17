@@ -101,6 +101,18 @@ footer a:hover{
     background-size: cover;
     background-position: center;
     
+    
+}
+
+.headliner2{
+    background-image: url(../img/head2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+    
+    max-width: 100%;
+    width: auto;
 }
 
 .bdbutton{
@@ -190,13 +202,13 @@ footer a:hover{
 }
 
 #minDesc1{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-shadow: black 2px 2px 3px;
     color: #b1b1b14e;
 }
 
 #minDesc2{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-shadow: black 2px 2px 3px;
     color: #b1b1b14e;
 }
@@ -239,4 +251,9 @@ footer a:hover{
 .glowText{
     text-align: center;
     color: white;
+}
+
+.sectionText{
+    text-align: center; color: rgb(255, 255, 255); font-size: 1rem; border-radius: 10px; text-shadow: 02px 2px 3px black;
+         padding-bottom: 7px
 }
