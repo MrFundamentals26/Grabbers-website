@@ -50,6 +50,8 @@ Part 2 focuses on CSS and styling the web pages and adding more content. the web
 # Sitemap
 Homepage -> Services, About, Enquiry, Contact
 
+Services -> booking page (private)
+
 # Changelog
 -Added the first 6 pages of the website along with the hero image
 
