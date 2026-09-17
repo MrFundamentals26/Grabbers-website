@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Enquiry</title>
+    <head>   
+        <title>Enquiries</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -17,12 +17,49 @@
                 <a href="contact.html">Contact us</a>
             </nav>   
         </div>
-        <div>
-            
-            This is the space where you can ask us anything about our business and its operations.<br>
-            <!--The input tag is used to allow users to input text where available-->
-            <input type="text">
+
+        <div class="sectionText" style="background-color: rgb(255, 54, 191);">
+            <h2 class="headline">HAVE A QUESTION OR WANT TO BOOK?</h2>
+            <p>
+                <b>FILL OUT THE FORM BELOW AND WE'LL GET BACK TO YOU</b>
+            </p>
         </div>
+
+        <div class="enquiryWrap">
+            <form class="enquiryForm" action="#" method="post">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select a service --</option>
+                    <option value="french-tips">French Tips</option>
+                    <option value="gel-polish">Gel Polish</option>
+                    <option value="acrylic-extensions">Acrylic Extensions</option>
+                    <option value="nail-art">Hand-Painted Nail Art</option>
+                    <option value="chrome-finishes">Chrome Finishes</option>
+                    <option value="3d-embellishments">3D Embellishments</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="other">Other / Not Sure</option>
+                </select>
+
+                <label for="preferredDate">Preferred Date</label>
+                <input type="date" id="preferredDate" name="preferredDate">
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us a bit more about what you're looking for..."></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </div>
+
         <footer>
             <hr>
             Copyright © 2026 Grabbers | Rights reserved | by Mr Fundamentals <a href="contact.html">Contact us</a>
