@@ -129,6 +129,14 @@ Services -> booking page (private)
 
 -Added slideshow of nails on the services page
 
+-Added display of all available services
+
+-Added forms to the enquiry page
+
+-Decorated contact page
+
+-edited footer
+
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
 Available at: https://corporatefinanceinstitute.com/resources/management/mission-statement/ 
