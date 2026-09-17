@@ -121,6 +121,10 @@ Homepage -> Services, About, Enquiry, Contact
 
 -Added links to Grabbers' social media
 
+-Added mission and vision statements
+
+-Added picture of founder
+
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
 Available at: https://corporatefinanceinstitute.com/resources/management/mission-statement/ 
