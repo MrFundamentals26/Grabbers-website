@@ -233,9 +233,21 @@ v2.29 — September 18, 2026
 Added hamburger menu
 
 # References
+Bootswatch, 2026. Quartz. [Online] 
+Available at: https://bootswatch.com/quartz/#top
+[Accessed 10 September 2026].
+
 ​​CFI, 2020. Mission Statement. [Online]  
 Available at: https://corporatefinanceinstitute.com/resources/management/mission-statement/ 
-[Accessed 11 August 2026]. 
+[Accessed 11 August 2026].
+
+coder biniya, 2026. FromBasic to PRO CSS Backgrounds Tutorial. [Online] 
+Available at: https://www.bing.com/ck/a?!&&p=60065fcf6fe4e8c159323c5a409cef34cb01bf84b3104d97672c5553a234d891JmltdHM9MTc4ODk5ODQwMA&ptn=3&ver=2&hsh=4&fclid=35215772-d468-645e-17f5-4183d5be65ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9aG93K3RvK21ha2UrZ3JhZGllbnQr
+[Accessed 10 September 2026].
+
+Creative Dev Pro, 2026. Makeglowing text with CSS. [Online] 
+Available at: https://www.youtube.com/shorts/zMAiKCrpkyM
+[Accessed 9 September 2026].
 
 ​Elementor Blog, 2026. How Much Does a Small Business Website Cost? (A 2026 Breakdown). [Online]  
 Available at: https://elementor.com/blog/how-much-does-a-small-business-website-cost/ 
@@ -245,36 +257,8 @@ Available at: https://elementor.com/blog/how-much-does-a-small-business-website-
 Available at: https://www.hostinger.com/domain-name-search?utm_id=677940938&msclkid=fe9abc95ca221b1279bfd6eee6e6e76d&utm_source=bing&utm_medium=cpc&utm_campaign=Generic-Domains|NT:Bing|LO:Other-Africa&utm_term=domain&utm_content=Domains+-+PD:DN 
 [Accessed 11 August 2026]. 
 
-​Nordic Recipe Box, 2025. Banana Nut Bread Recipe. [Online]  
-Available at: https://www.bing.com/images/search?view=detailV2&ccid=ghqb4WWo&id=4FEE39924B8D77228FB9C0A6B6165D8A9DBA15CF&thid=OIP.ghqb4WWoidSyb18OWqt6kwHaLH&mediaurl=https%3a%2f%2fwww.spendwithpennies.com%2fwp-content%2fuploads%2f2021%2f05%2f1200-Moist-Banana-Bread-Spe 
-[Accessed 11 August 2026]. 
-
-​Warmly, 2025. 15 Lead Generation Metrics & KPIs You Should Track in 2026. [Online]  
-Available at: https://www.warmly.ai/p/blog/lead-generation-metrics#6-customer-acquisition-cost-cac 
-[Accessed 11 August 2026]. 
-
-​Wix, 2026. Why you're in good hands with Wix. [Online]  
-Available at: https://www.wix.com/lp-en/hosting?utm_source=bing&utm_medium=cpc&utm_campaign=506226400^1271037187389242^search%20-%20bing%20rest&experiment_id=free%20domain%20hosting^b^^&msclkid=21b39fb6c8b2111a9c3ef5cde476bb8d 
-[Accessed 11 August 2026]. 
-
-Creative Dev Pro, 2026. Makeglowing text with CSS. [Online] 
-Available at: https://www.youtube.com/shorts/zMAiKCrpkyM
-[Accessed 9 September 2026].
-
-Bootswatch, 2026. Quartz. [Online] 
-Available at: https://bootswatch.com/quartz/#top
-[Accessed 10 September 2026].
-
-coder biniya, 2026. FromBasic to PRO CSS Backgrounds Tutorial. [Online] 
-Available at: https://www.bing.com/ck/a?!&&p=60065fcf6fe4e8c159323c5a409cef34cb01bf84b3104d97672c5553a234d891JmltdHM9MTc4ODk5ODQwMA&ptn=3&ver=2&hsh=4&fclid=35215772-d468-645e-17f5-4183d5be65ac&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9aG93K3RvK21ha2UrZ3JhZGllbnQr
-[Accessed 10 September 2026].
-
 Just Nails, 2026. luxury Nails with golden touch. [Online] 
 Available at: https://pin.it/1WcjhWLTJ
-[Accessed 15 September 2026].
-
-w3 Schools, 2026. HTML Background Images. [Online] 
-Available at: https://www.w3schools.com/htmL/html_images_background.asp#:~:text=To%20add%20a%20background
 [Accessed 15 September 2026].
 
 Magnific, 2026. Instagram icon. [Online]
@@ -284,3 +268,20 @@ Available at: https://www.flaticon.com/free-icons/instagram-logo"
 Magnific, 2026. Tiktok icon. [Online]
 Available at: https://www.flaticon.com/free-icons/tik-tok" 
 [Accessed 16 September 2026].
+
+​Nordic Recipe Box, 2025. Banana Nut Bread Recipe. [Online]  
+Available at: https://www.bing.com/images/search?view=detailV2&ccid=ghqb4WWo&id=4FEE39924B8D77228FB9C0A6B6165D8A9DBA15CF&thid=OIP.ghqb4WWoidSyb18OWqt6kwHaLH&mediaurl=https%3a%2f%2fwww.spendwithpennies.com%2fwp-content%2fuploads%2f2021%2f05%2f1200-Moist-Banana-Bread-Spe 
+[Accessed 11 August 2026].
+
+w3 Schools, 2026. HTML Background Images. [Online] 
+Available at: https://www.w3schools.com/htmL/html_images_background.asp#:~:text=To%20add%20a%20background
+[Accessed 15 September 2026].
+
+​Warmly, 2025. 15 Lead Generation Metrics & KPIs You Should Track in 2026. [Online]  
+Available at: https://www.warmly.ai/p/blog/lead-generation-metrics#6-customer-acquisition-cost-cac 
+[Accessed 11 August 2026]. 
+
+​Wix, 2026. Why you're in good hands with Wix. [Online]  
+Available at: https://www.wix.com/lp-en/hosting?utm_source=bing&utm_medium=cpc&utm_campaign=506226400^1271037187389242^search%20-%20bing%20rest&experiment_id=free%20domain%20hosting^b^^&msclkid=21b39fb6c8b2111a9c3ef5cde476bb8d 
+[Accessed 11 August 2026]. 
+
