@@ -1,8 +1,6 @@
 # Grabbers-website
 This repository is made to store files and code for a website for a nearby nail salon called Grabbers which will be my assignment for WEDE5020
 
-# Words
-
 # Student information
 ST10480197
 
@@ -55,98 +53,184 @@ Homepage -> Services, About, Enquiry, Contact
 Services -> booking page (private)
 
 # Changelog
+Part 1
 
-Part1
+v1.0 — August 7, 2026
 
--Added the first 6 pages of the website along with the hero image
+Added the first 6 pages of the website along with the hero image
 
--Added call to action on the word "buy" by linking it to the products change
+v1.1 — August 9, 2026
 
--Added description to special order page
+Added call to action on the word "buy" by linking it to the products page
 
--Added comments to the index page
+v1.2 — August 11, 2026
 
--Embedded a Google Maps map into the contact page
+Added description to special order page
 
--Added an input text field into the enquiry page
+v1.3 — August 13, 2026
 
--Added 3 input text fields in the specialOrder page
+Added comments to the index page
 
--Added "buy now" button to index page
+v1.4 — August 15, 2026
 
--Added footer to index page
+Embedded a Google Maps map into the contact page
 
--All HTML files have been updated with comments to explain the code
+v1.5 — August 17, 2026
 
--All pages now have a footer
+Added an input text field into the enquiry page
 
--Image of employee has been added on about page
+v1.6 — August 19, 2026
 
--Button to submit has been added to special orders page
+Added 3 input text fields in the special order page
 
--Added js, assets and CSS folders
+v1.7 — August 21, 2026
 
+Added "Buy Now" button to index page
+
+v1.8 — August 23, 2026
+
+Added footer to index page
+
+v1.9 — August 26, 2026
+
+All HTML files have been updated with comments to explain the code
+
+v1.10 — August 28, 2026
+
+All pages now have a footer
+
+v1.11 — August 30, 2026
+
+Image of employee has been added on about page
+
+v1.12 — September 2, 2026
+
+Button to submit has been added to special orders page
+
+v1.13 — September 4, 2026
+
+Added js, assets, and CSS folders
 Part 2
 
--Created style.css to be used as a stylesheet
+v2.0 — September 7, 2026
 
--Updated website navigation on every page to allow for seamless navigation
+Created style.css to be used as a stylesheet
 
--Added footer tags
+v2.1 — September 7, 2026
 
--Removed special orders page
+Updated website navigation on every page to allow for seamless navigation
 
--Added background color on all pages
+v2.2 — September 7, 2026
 
--Made H1 tags glow
+Added footer tags
 
--Added logo
+v2.3 — September 8, 2026
 
--Moved navigation on home page to the right side
+Removed special orders page
 
--Changed call to action button to be fancier
+v2.4 — September 8, 2026
 
--Chose a purple and pink color scheme
+Added background color on all pages
 
--Website name glows when hovered over and functions as a return back to the home page
+v2.5 — September 9, 2026
 
--Added icon on tabs
+Made H1 tags glow
 
--Added images on index page
+v2.6 — September 9, 2026
 
--Changed CSS colors for body
+Added logo
 
--Added tagline on index page
+v2.7 — September 10, 2026
 
--Changed logo
+Moved navigation on home page to the right side
 
--Added universal background
+v2.8 — September 10, 2026
 
--Removed the 6th special orders page
+Changed call to action button to be fancier
 
--Added descriptions to the home page
+v2.9 — September 11, 2026
 
--Changed background color (again)
+Chose a purple and pink color scheme
 
--Added links to Grabbers' social media
+v2.10 — September 11, 2026
 
--Added mission and vision statements
+Website name glows when hovered over and functions as a return back to the home page
 
--Added picture of founder
+v2.11 — September 12, 2026
 
--Added slideshow of nails on the services page
+Added icon on tabs
 
--Added display of all available services
+v2.12 — September 12, 2026
 
--Added forms to the enquiry page
+Added images on index page
 
--Decorated contact page
+v2.13 — September 12, 2026
 
--edited footer
+Changed CSS colors for body
 
--made website responsive to different devices
+v2.14 — September 13, 2026
 
--added hamburger menu
+Added tagline on index page
+
+v2.15 — September 13, 2026
+
+Changed logo
+
+v2.16 — September 13, 2026
+
+Added universal background
+
+v2.17 — September 14, 2026
+
+Removed the 6th special orders page
+
+v2.18 — September 14, 2026
+
+Added descriptions to the home page
+
+v2.19 — September 15, 2026
+
+Changed background color (again)
+
+v2.20 — September 15, 2026
+
+Added links to Grabbers' social media
+
+v2.21 — September 16, 2026
+
+Added mission and vision statements
+
+v2.22 — September 16, 2026
+
+Added picture of founder
+
+v2.23 — September 16, 2026
+
+Added slideshow of nails on the services page
+
+v2.24 — September 17, 2026
+
+Added display of all available services
+
+v2.25 — September 17, 2026
+
+Added forms to the enquiry page
+
+v2.26 — September 17, 2026
+
+Decorated contact page
+
+v2.27 — September 18, 2026
+
+Edited footer
+
+v2.28 — September 18, 2026
+
+Made website responsive to different devices
+
+v2.29 — September 18, 2026
+
+Added hamburger menu
 
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
