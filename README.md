@@ -1,6 +1,8 @@
 # Grabbers-website
 This repository is made to store files and code for a website for a nearby nail salon called Grabbers which will be my assignment for WEDE5020
 
+# Words
+
 # Student information
 ST10480197
 
@@ -136,7 +138,6 @@ Services -> booking page (private)
 -Decorated contact page
 
 -edited footer
-
 -made website responsive to different devices
 
 # References
