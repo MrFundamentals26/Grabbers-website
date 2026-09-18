@@ -138,6 +138,7 @@ Services -> booking page (private)
 -Decorated contact page
 
 -edited footer
+
 -made website responsive to different devices
 
 # References
