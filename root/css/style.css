@@ -1,59 +1,65 @@
+:root{
+    --deep-purple: #4a1552;
+    --royal-purple: #7c2f8e;
+    --magenta: #c0289e;
+    --pink-tint: #f8ecf7;
+    --lavender-tint: #efe0f5;
+    --gold: #f0c14b;
+    --cyan-glow: #4dd9ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(160deg, var(--pink-tint) 0%, var(--lavender-tint) 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 h1 {
     font-size: 3.5rem;
-    text-shadow: black 3px 3px 5px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;            
     margin-top: 5px;
     margin-bottom: 5px;
-    
 }
-
-
 
 nav{
     margin-left: auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: solid;
-    /*use this to align navigation up to down on the banner*/
     margin-top: 20px;
-    padding: 5px;
-    
-    border-radius: 10px;
-    background-color: rgba(251, 135, 255, 0.4);
-    box-shadow:  
-                5px 5px 7px;
-}
-
-footer{
-    text-align: center;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background-color: rgba(192, 40, 158, 0.18);
+    border: 1px solid rgba(240, 193, 75, 0.4);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.25);
 }
 
 body{
-    background-color: #f5daf2;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /*decoration for all banners*/
 .banner{
     display: flex;
     flex-direction: row;
-    background-color: #562057;
-    padding: 10px;
-    
+    background-color: var(--deep-purple);
+    padding: 10px 20px;
     align-items: center;
 }
 /*Navigation text decoration*/
 nav a{
     text-decoration: none;
-    color: rgb(51, 162, 253);
-    text-shadow: 0px 0px 5px,
-                0px 0px 5px;
+    color: #ffffff;
+    padding: 4px 6px;
 }
 
 nav a:hover{
-    text-decoration: underline;
-    color: rgb(245, 36, 36);
-    text-shadow: 0px 0px 5px,
-                0px 0px 5px;
+    text-decoration: none;
+    color: var(--gold);
+    text-shadow: 0 0 6px currentColor;
 }
 /*Logo sizing*/
 .banner img {
@@ -63,14 +69,16 @@ nav a:hover{
 }
 
 footer{
-    background-color: #562057;
-    color: rgba(255, 255, 255, 0.532);
+    text-align: center;
+    background-color: var(--deep-purple);
+    color: rgba(255, 255, 255, 0.6);
     padding-bottom: 1%;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
 }
 
 footer a {
     text-decoration: none;
+    color: var(--gold);
 }
 
 footer a:hover{
@@ -78,12 +86,9 @@ footer a:hover{
 }
 
 #logoText:hover {
-    color: white;
-    text-shadow: 0px 0px 5px,
-                0px 0px 5px;
+    color: var(--gold);
+    text-shadow: 0 0 6px currentColor;
 }
-
-
 
 /*This styles the main headline which use h2*/
 .headline{
@@ -92,7 +97,7 @@ footer a:hover{
     margin-top: 1px;
     padding-bottom: 10px;
     color: white;
-    text-shadow: black 2px 2px 3px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 .headliner{
@@ -100,8 +105,6 @@ footer a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-    
 }
 
 .headliner2{
@@ -110,7 +113,6 @@ footer a:hover{
     background-size: cover;
     background-position: center;
     padding-bottom: 70px;
-    
     max-width: 100%;
     width: auto;
 }
@@ -121,23 +123,26 @@ footer a:hover{
     margin-bottom: 10px;
 }
 
-.bdbutton button{
+.bdbutton button,
+.enquiryForm button,
+.callbackBtn{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   background-color: #d214bc;
-   font-size: 1rem;
-   box-shadow: 0px 0px 10px #d214bc;
-   border: black 5px;
-   border-radius: 3px;
-   padding: 13px;
-   color: white;
-   
+    background: linear-gradient(135deg, var(--deep-purple), var(--royal-purple));
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(192,40,158,0.6);
+    border: none;
+    border-radius: 6px;
+    padding: 13px 22px;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.bdbutton button:hover{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #d214bc;
-    box-shadow: 0px 0px 10px #d214bc,0px 0px 10px #d214bc;
-    text-shadow: 0px 0px 10px white,0px 0px 10px white;
+.bdbutton button:hover,
+.enquiryForm button:hover,
+.callbackBtn:hover{
+    box-shadow: 0 0 18px rgba(192,40,158,0.9);
+    transform: translateY(-1px);
 }
 
 #Mainserv{
@@ -157,17 +162,18 @@ footer a:hover{
     text-align: center;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: black 2px 2px 3px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     background-image: url(../img/fancynails.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     font-size: 1.3rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
 }
 
 #serv:hover{
-    color: #5e5e5e6f;
+    color: rgba(255,255,255,0.15);
 }
 
 #serv:hover #minDesc1{
@@ -184,68 +190,67 @@ footer a:hover{
     text-align: center;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: black 2px 2px 3px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     background-image: url(../img/mani.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     font-size: 1.3rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
 } 
 
 #serv2:hover{
-    color: #5e5e5e6f;
+    color: rgba(255,255,255,0.15);
 }
 
 #serv2:hover #minDesc2{
     color: white;
 }
 
-#minDesc1{
-    font-size: 0.8rem;
-    text-shadow: black 2px 2px 3px;
-    color: #b1b1b14e;
-}
-
+#minDesc1,
 #minDesc2{
     font-size: 0.8rem;
-    text-shadow: black 2px 2px 3px;
-    color: #b1b1b14e;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    color: rgba(255,255,255,0.35);
+    transition: color 0.2s;
 }
 
 #ourWork{
-    background-color: #ff60ec;
+    background: linear-gradient(135deg, var(--magenta), var(--royal-purple));
     padding-top: 100px;
 }
 
 .glowLink{
     text-shadow: none;
-    color: blue;
+    color: var(--gold);
+    font-weight: bold;
 }
 
 .glowLink:hover{
-    text-shadow: blue 0px 0px 4px, 0px 0px 4px;
+    text-shadow: 0 0 6px currentColor;
 }
 
 .socials{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 60px;
 }
 
 .socials img{
-    height: 100px;
+    height: 90px;
     width: auto;
     max-width: 100%;
-    background-color: #3e008a;
-    border-radius: 70%;
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    padding: 14px;
 }
 
 .socials img:hover{
-    transform: scale(1.1);
-    background-color: #4f02ad;
-    box-shadow: #4f02ad 0px 0px 40px, 0px 0px 40px, 0px 0px 40px;
+    transform: scale(1.08);
+    box-shadow: 0 0 20px var(--gold);
 }
 
 .glowText{
@@ -254,8 +259,12 @@ footer a:hover{
 }
 
 .sectionText{
-    text-align: center; color: rgb(255, 255, 255); font-size: 1rem; border-radius: 10px; text-shadow: 02px 2px 3px black;
-         padding-bottom: 7px
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    padding-bottom: 7px;
 }
 
 .marquee-wrap {
@@ -272,6 +281,8 @@ footer a:hover{
     height: 200px;
     width: auto;
     margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
 @keyframes scroll {
@@ -291,8 +302,7 @@ footer a:hover{
 .nsI{
     text-align: center;
     color: white;
-    text-shadow: black 2px 2px 3px;
-    
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
 .nsI p{
@@ -300,10 +310,11 @@ footer a:hover{
 }
 
 .nsI img{
-    height: 100px;
+    height: 200px;
     width: auto;
     max-width: 100%;
     border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
 }
 
 /*enquiry page*/
@@ -319,10 +330,10 @@ footer a:hover{
     flex-direction: column;
     width: 100%;
     max-width: 500px;
-    background-color: #562057;
+    background-color: var(--deep-purple);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 .enquiryForm label {
@@ -336,8 +347,8 @@ footer a:hover{
 .enquiryForm select,
 .enquiryForm textarea {
     padding: 10px;
-    border-radius: 5px;
-    border: none;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.2);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
 }
@@ -346,26 +357,282 @@ footer a:hover{
     resize: vertical;
 }
 
-.enquiryForm button {
-    margin-top: 25px;
-    padding: 13px;
-    background-color: #d214bc;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    font-size: 1rem;
-    box-shadow: 0px 0px 10px #d214bc;
-    cursor: pointer;
-}
-
-.enquiryForm button:hover {
-    box-shadow: 0px 0px 10px #d214bc, 0px 0px 10px #d214bc;
-    text-shadow: 0px 0px 10px white, 0px 0px 10px white;
-}
-
 .footBox{
     display: flex;
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+}
+
+/*contact page*/
+.contact-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 40px 40px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.contact-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+.contact-list li span {
+    display: block;
+    font-weight: bold;
+    color: var(--gold);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.callback-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.callback-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+html {
+    overflow-x: hidden;              
+}
+
+img {
+    max-width: 100%;                 
+}
+
+/* Headings that scale smoothly between phone and desktop. */
+h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+}
+
+.headline {
+    font-size: clamp(1.6rem, 6vw, 3rem);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sectionText {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Keeps paragraphs readable instead of stretching edge to edge */
+.sectionText p,
+#ourWork .sectionText {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Tablets and small laptops (max 1024px) */
+
+@media (max-width: 1024px) {
+
+    .banner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Mainserv {
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    #serv,
+    #serv2 {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .ns {
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    #ourWork {
+        padding-top: 50px;
+    }
+
+    .socials {
+        gap: 40px;
+    }
+}
+
+
+/* Phones and small tablets (max 768px)  */
+
+@media (max-width: 768px) {
+
+   
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px 10px;
+    }
+
+    .banner img {
+        height: 70px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 10px;
+        margin-top: 12px;
+        padding: 10px 12px;
+        border-radius: 16px;
+    }
+
+    nav a {
+        padding: 8px 10px;           
+    }
+
+    /* Hero */
+    .headliner {
+        padding-bottom: 20px;
+    }
+
+    .headliner2 {
+        padding-bottom: 40px;
+    }
+
+    /* Service cards stack */
+    #Mainserv {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #serv,
+    #serv2 {
+        height: auto;
+        min-height: 230px;
+        padding: 20px;
+    }
+
+    
+    .ns {
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+
+    .nsI {
+        width: calc(50% - 20px);
+    }
+
+    .nsI img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+
+    .marquee-img {
+        height: 130px;
+    }
+
+    /* Socials */
+    .socials {
+        gap: 25px;
+    }
+
+    .socials img {
+        height: 65px;
+        padding: 10px;
+    }
+
+    /* Forms and contact */
+    .enquiryWrap {
+        padding: 20px 15px 40px;
+    }
+
+    .enquiryForm {
+        padding: 20px;
+    }
+
+    .contact-wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px 30px;
+        gap: 20px;
+    }
+
+    .contact-wrap > div {
+        width: 100%;
+    }
+
+    .callback-input {
+        flex-direction: column;
+    }
+
+    /* Footer columns stack */
+    .footBox {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    p[style*="width: 50%"] {
+        width: 90% !important;
+        max-width: 600px;
+    }
+}
+
+@media (hover: none) {
+
+    #minDesc1,
+    #minDesc2 {
+        color: white;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .marquee-track {
+        animation: none;
+    }
+
+    * {
+        transition: none !important;
+    }
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
 }
