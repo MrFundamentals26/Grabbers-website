@@ -49,6 +49,36 @@ body{
     padding: 10px 20px;
     align-items: center;
 }
+.banner-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* The checkbox that tracks open/closed state - never actually shown */
+.nav-toggle {
+    display: none;
+}
+
+/* The 3-bar icon itself - hidden on desktop, only shown on phones */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--gold);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 /*Navigation text decoration*/
 nav a{
     text-decoration: none;
@@ -442,6 +472,48 @@ h1 {
 }
 
 
+/* PCs and large desktop monitors (min 1025px) */
+
+@media (min-width: 1025px) {
+
+    /* Keep the wide flex rows from stretching too thin/far apart on
+       very large monitors, and give everything a bit more breathing room */
+    #Mainserv {
+        gap: 130px;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ns {
+        gap: 80px;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .socials {
+        gap: 90px;
+    }
+
+    .marquee-img {
+        height: 230px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 6px 10px;
+    }
+
+    .contact-wrap {
+        max-width: 1100px;
+    }
+}
+
+
 /* Tablets and small laptops (max 1024px) */
 
 @media (max-width: 1024px) {
@@ -500,19 +572,47 @@ h1 {
         height: 70px;
     }
 
-    nav {
+    .banner-top {
         width: 100%;
+        justify-content: space-between;
+    }
+
+    /* Show the hamburger icon only on phones */
+    .hamburger {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4px 10px;
+    }
+
+    /* Nav stays hidden until the checkbox is checked */
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 4px;
         margin-top: 12px;
         padding: 10px 12px;
         border-radius: 16px;
     }
 
+    .nav-toggle:checked ~ nav {
+        display: flex;
+    }
+
     nav a {
         padding: 8px 10px;           
+    }
+
+    /* Animate the bars into an X when open
+       (checkbox is a sibling of .banner-top, hamburger is inside it) */
+    .nav-toggle:checked ~ .banner-top .hamburger span:nth-child(1) {
+        transform: translateY(9.5px) rotate(45deg);
+    }
+
+    .nav-toggle:checked ~ .banner-top .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle:checked ~ .banner-top .hamburger span:nth-child(3) {
+        transform: translateY(-9.5px) rotate(-45deg);
     }
 
     /* Hero */
