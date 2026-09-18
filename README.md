@@ -137,6 +137,8 @@ Services -> booking page (private)
 
 -edited footer
 
+-made website responsive to different devices
+
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
 Available at: https://corporatefinanceinstitute.com/resources/management/mission-statement/ 
