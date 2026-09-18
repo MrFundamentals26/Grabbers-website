@@ -55,6 +55,9 @@ Homepage -> Services, About, Enquiry, Contact
 Services -> booking page (private)
 
 # Changelog
+
+Part1
+
 -Added the first 6 pages of the website along with the hero image
 
 -Added call to action on the word "buy" by linking it to the products change
@@ -82,6 +85,8 @@ Services -> booking page (private)
 -Button to submit has been added to special orders page
 
 -Added js, assets and CSS folders
+
+Part 2
 
 -Created style.css to be used as a stylesheet
 
@@ -140,6 +145,8 @@ Services -> booking page (private)
 -edited footer
 
 -made website responsive to different devices
+
+-added hamburger menu
 
 # References
 ​​CFI, 2020. Mission Statement. [Online]  
