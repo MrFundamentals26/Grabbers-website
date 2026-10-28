@@ -1,148 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Grabbers</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" href="img/logo.png">
     </head>
     <body>
-        <!--The division below is for the main banner with the logo and navigation-->
         <div class="banner">
             <input type="checkbox" id="navToggle" class="nav-toggle">
             <div class="banner-top">
-                <img src="img/logo.png" >
+                <img src="img/logo.png" alt="Grabbers logo">
                 <a href="index.html" style="text-decoration: none;"><h1 id="logoText">GRABBERS</h1></a>
-                <label for="navToggle" class="hamburger">
+                <label for="navToggle" class="hamburger" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
             </div>
-        <!-- Below is the code for the website navigation where it links pages-->
             <nav>
-                <a href="index.html" style="color: #f0c14b;text-shadow: 0 0 6px currentColor;">Homepage</a>
-                <a href="assets/about.html">About us</a>
+                <a href="index.html" class="active">Homepage</a>
                 <a href="assets/services.html">Services</a>
-                <a href="assets/enquiry.html">Enquries</a>
+                <a href="assets/booking.html">Booking</a>
+                <a href="assets/about.html">About us</a>
+                <a href="assets/enquiry.html">Enquiries</a>
                 <a href="assets/contact.html">Contact us</a>
-            </nav>   
+            </nav>
         </div>
+
         <div class="headliner">
-            <h3 style="text-align: center;color: white; padding-top: 30px;text-shadow: 2px 2px 6px rgba(0,0,0,0.6);" >IT'S TIME FOR A <b style="color: #4dd9ff;text-shadow: 0 0 6px currentColor;">GLOW</b> UP</h3>
+            <h3 class="eyebrow">IT'S TIME FOR A <b class="glow-cyan">GLOW</b> UP</h3>
             <h2 class="headline">LET'S GET YOUR NAILS DONE!</h2>
             <div class="bdbutton">
                 <button onclick="window.location.href='assets/services.html'"><b>Fancy Nails Time</b></button>
             </div>
         </div>
-        <div style="text-align: center; color: rgb(255, 255, 255); font-size: 1.3rem; border-radius: 10px; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-        background-color: rgba(192, 40, 158, 0.85); padding-bottom: 7px; 
-        margin-bottom: 20px;">
-            <b>
-              TAKE A LOOK AT OUR SERVICE CATEGORIES
-            </b>
-            
-        </div>    
-        
-        
-        <!--The div tag is used to separate sections, the b tag is used to make the word "world" bolder, the br tag is used to break lines up and stack them-->
+
+        <div class="section-label">
+            <b>TAKE A LOOK AT OUR SERVICE CATEGORIES</b>
+        </div>
+
         <div id="Mainserv">
             <div id="serv">
-               <p>
-                NAIL<br>
-                DESIGNS
-               </p>
-               <p id="minDesc1">
-                Choose from French tips, gel, acrylics, 
-                or custom hand-painted art. We offer ombré,
-                glitter, chrome accents, 
-                3D embellishments, and rhinestones —
-                tailored to your style. From subtle 
-                elegance to bold statement sets, 
-                we've got the design for you.
-               </p> 
-                
+                <p>NAIL<br>DESIGNS</p>
+                <p id="minDesc1">
+                    Choose from French tips, gel, acrylics,
+                    or custom hand-painted art. We offer ombré,
+                    glitter, chrome accents,
+                    3D embellishments, and rhinestones —
+                    tailored to your style. From subtle
+                    elegance to bold statement sets,
+                    we've got the design for you.
+                </p>
             </div>
             <div id="serv2">
-                <p>
-                NAIL<br>
-                TREATMENTS
-                </p>
+                <p>NAIL<br>TREATMENTS</p>
                 <p id="minDesc2">
-                    Treat your hands and feet to classic or spa 
-                    manicures and pedicures, complete with 
-                    cuticle care, exfoliation, and relaxing 
-                    massage. We also offer nail strengthening, 
-                    repair, and moisturizing treatments — 
-                    leaving you polished, refreshed, and 
-                    ready to show off healthy, 
-                    well-cared-for nails.  
+                    Treat your hands and feet to classic or spa
+                    manicures and pedicures, complete with
+                    cuticle care, exfoliation, and relaxing
+                    massage. We also offer nail strengthening,
+                    repair, and moisturizing treatments —
+                    leaving you polished, refreshed, and
+                    ready to show off healthy,
+                    well-cared-for nails.
                 </p>
             </div>
-        </div><br>
-        
-        <div id="ourWork" style="justify-items: center;">
-            <h2 class="headline" style="padding-bottom: 30px;">WHAT WE DO <br>____________________________</h2>
+        </div>
+        <br>
+
+        <div id="ourWork">
+            <h2 class="headline">WHAT WE DO <br>____________________________</h2>
             <p class="sectionText">
-                Every set tells a story. From delicate minimalist lines to bold, 
-                statement-making art, our portfolio showcases the range 
-                and precision our clients love us for. Browse through 
-                our latest creations — glossy chrome finishes, 
-                hand-painted florals, intricate marble effects, 
+                Every set tells a story. From delicate minimalist lines to bold,
+                statement-making art, our portfolio showcases the range
+                and precision our clients love us for. Browse through
+                our latest creations — glossy chrome finishes,
+                hand-painted florals, intricate marble effects,
                 and seasonal designs crafted with care and creativity.
-                <br> 
-                <br>
-                Each design is a collaboration between you and our nail 
-                artists, built around your style, your occasion, and 
-                your personality. Whether it's a subtle everyday 
-                manicure or an elaborate design for a special event, 
-                our gallery reflects the quality and detail we bring to 
+                <br><br>
+                Each design is a collaboration between you and our nail
+                artists, built around your style, your occasion, and
+                your personality. Whether it's a subtle everyday
+                manicure or an elaborate design for a special event,
+                our gallery reflects the quality and detail we bring to
                 every appointment.
-                <br>
-                <br>
-                Scroll through our <a class="glowLink" href="assets/services.html">services</a> page, get inspired, and picture your next 
-                set. Then book a session and let us bring your vision 
+                <br><br>
+                Scroll through our <a class="glowLink" href="assets/services.html">services</a> page, get inspired, and picture your next
+                set. Then book a session and let us bring your vision
                 to life.
             </p>
             <div class="bdbutton">
                 <button onclick="window.location.href='assets/services.html'"><b>Book Now</b></button>
             </div>
         </div>
-        <div style="background-color: #4a1552;padding-top: 1px;">
-            <h2 class="headline" style="padding-bottom: 10px;">OUR SOCIALS</h2>
-            <h3 style="text-align: center;color: white;text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">Take a look at our social media pages to see what we do.</h3>
+
+        <div class="social-band">
+            <h2 class="headline">OUR SOCIALS</h2>
+            <h3 class="subline">Take a look at our social media pages to see what we do.</h3>
             <div class="socials">
-                <a href="https://www.instagram.com/grabbers_nails/" target="_blank">
-                    <img src="img/instagram.png">
+                <a href="https://www.instagram.com/grabbers_nails/" target="_blank" rel="noopener">
+                    <img src="img/instagram.png" alt="Instagram">
                     <p class="glowText">Instagram</p>
                 </a>
-                <a href="https://www.tiktok.com/@grabbers_nails" target="_blank">
-                    <img src="img/tiktok.png">
+                <a href="https://www.tiktok.com/@grabbers_nails" target="_blank" rel="noopener">
+                    <img src="img/tiktok.png" alt="TikTok">
                     <p class="glowText">Tiktok</p>
                 </a>
             </div>
         </div>
+
         <footer>
             <hr>
             <div class="footBox">
                 <div>
                     <h4>Quick Navigation</h4>
                     <a href="index.html">Homepage</a><br>
-                    <a href="assets/about.html">About us</a><br>
                     <a href="assets/services.html">Services</a><br>
-                    <a href="assets/enquiry.html">Enquries</a><br>
+                    <a href="assets/booking.html">Booking</a><br>
+                    <a href="assets/about.html">About us</a><br>
+                    <a href="assets/enquiry.html">Enquiries</a><br>
                     <a href="assets/contact.html">Contact us</a>
-
                 </div>
                 <div>
                     <h4>Connect with us</h4><br>
-                    <a href="https://www.instagram.com/grabbers_nails/" target="_blank">
-                    <img style="height: 50px; width: auto; max-width: 100%;" src="img/instagram.png">
-                    <a href="https://www.tiktok.com/@grabbers_nails" target="_blank">
-                    <img style="height: 50px; width: auto; max-width: 100%;" src="img/tiktok.png"></a>
-                </div><br>
+                    <a href="https://www.instagram.com/grabbers_nails/" target="_blank" rel="noopener">
+                        <img class="footIcon" src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@grabbers_nails" target="_blank" rel="noopener">
+                        <img class="footIcon" src="img/tiktok.png" alt="TikTok">
+                    </a>
+                </div>
             </div><br>
-            Copyright © 2026 Grabbers | Rights reserved | by Dillon <a href="assets/contact.html">Contact us</a>
+            Copyright © 2026 Grabbers | Rights reserved | by Mr Fundamentals <a href="assets/contact.html">Contact us</a>
         </footer>
     </body>
-    
 </html>

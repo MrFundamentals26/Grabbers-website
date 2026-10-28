@@ -1,135 +1,148 @@
 <!DOCTYPE html>
-<html>
-    <head>   
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Services</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/png" href="../img/logo.png">
     </head>
     <body>
         <div class="banner">
             <input type="checkbox" id="navToggle" class="nav-toggle">
             <div class="banner-top">
-                <img src="../img/logo.png" >
-                <a href="index.html" style="text-decoration: none;"><h1 id="logoText">GRABBERS</h1></a>
-                <label for="navToggle" class="hamburger">
+                <img src="../img/logo.png" alt="Grabbers logo">
+                <a href="../index.html" style="text-decoration: none;"><h1 id="logoText">GRABBERS</h1></a>
+                <label for="navToggle" class="hamburger" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
             </div>
-        <!-- Below is the code for the website navigation where it links pages-->
             <nav>
                 <a href="../index.html">Homepage</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="booking.html">Booking</a>
                 <a href="about.html">About us</a>
-                <a href="services.html" style="color: #f0c14b;text-shadow: 0 0 6px currentColor;">Services</a>
-                <a href="enquiry.html">Enquries</a>
+                <a href="enquiry.html">Enquiries</a>
                 <a href="contact.html">Contact us</a>
-            </nav>   
+            </nav>
         </div>
+
         <br>
         <div class="marquee-wrap">
             <div class="marquee-track">
-                <img src="../img/n1.jpeg" class="marquee-img">
-                <img src="../img/n2.jpeg" class="marquee-img">
-                <img src="../img/n3.jpeg" class="marquee-img">
-                <img src="../img/n4.jpeg" class="marquee-img">
-                <img src="../img/n5.jpeg" class="marquee-img">
-                <img src="../img/n6.jpeg" class="marquee-img">
-                <img src="../img/n7.jpeg" class="marquee-img">
-                <img src="../img/n8.jpeg" class="marquee-img">
+                <img src="../img/n1.jpeg" class="marquee-img" alt="">
+                <img src="../img/n2.jpeg" class="marquee-img" alt="">
+                <img src="../img/n3.jpeg" class="marquee-img" alt="">
+                <img src="../img/n4.jpeg" class="marquee-img" alt="">
+                <img src="../img/n5.jpeg" class="marquee-img" alt="">
+                <img src="../img/n6.jpeg" class="marquee-img" alt="">
+                <img src="../img/n7.jpeg" class="marquee-img" alt="">
+                <img src="../img/n8.jpeg" class="marquee-img" alt="">
+                <img src="../img/n1.jpeg" class="marquee-img" alt="">
+                <img src="../img/n2.jpeg" class="marquee-img" alt="">
+                <img src="../img/n3.jpeg" class="marquee-img" alt="">
+                <img src="../img/n4.jpeg" class="marquee-img" alt="">
+                <img src="../img/n5.jpeg" class="marquee-img" alt="">
+                <img src="../img/n6.jpeg" class="marquee-img" alt="">
+                <img src="../img/n7.jpeg" class="marquee-img" alt="">
+                <img src="../img/n8.jpeg" class="marquee-img" alt="">
             </div>
         </div>
+
         <div class="sectionText">
             <h2 class="headline">TAKE A LOOK AT WHAT WE CAN OFFER YOU!</h2>
-            <p>
-                <b>AND SELECT WHAT YOU WOULD LIKE TO HAVE</b>
-            </p>
+            <p><b>AND SELECT WHAT YOU WOULD LIKE TO HAVE</b></p>
         </div>
 
-        <!--Showcase flexbox-->
-        <div style="background-color: #7c2f8e; padding-top: 5px;">
+        <div class="service-band band-purple">
             <h2 class="headline">NAIL DESIGNS</h2>
             <div class="ns">
                 <div class="nsI">
-                    <img src="../img/n9.jpeg">
+                    <img src="../img/n9.jpeg" alt="French tips">
                     <p>French tips<br>R450</p>
                 </div>
                 <div class="nsI">
-                    <img src="../img/n5.jpeg">
+                    <img src="../img/n5.jpeg" alt="Gel polish">
                     <p>Gel Polish<br>R390</p>
                 </div>
                 <div class="nsI">
-                    <img src="../img/n7.jpeg">
+                    <img src="../img/n7.jpeg" alt="Acrylic extensions">
                     <p>Acrylic extensions<br>R460</p>
                 </div>
             </div>
             <br>
             <div class="ns">
                 <div class="nsI">
-                    <img src="../img/n10.jpeg">
+                    <img src="../img/n10.jpeg" alt="Hand-painted nail art">
                     <p>Hand-painted<br>Nail art<br>R150</p>
                 </div>
                 <div class="nsI">
-                    <img src="../img/n11.jpeg">
+                    <img src="../img/n11.jpeg" alt="Chrome finishes">
                     <p>Chrome finishes<br>R290</p>
                 </div>
                 <div class="nsI">
-                    <img src="../img/n6.jpeg">
-                    <p>3D Embelishments<br>R350</p>
+                    <img src="../img/n6.jpeg" alt="3D embellishments">
+                    <p>3D Embellishments<br>R350</p>
                 </div>
             </div>
             <div class="bdbutton">
-                <button onclick="window.location.href='enquiry.html'"><b>Book Now</b></button>
+                <button onclick="window.location.href='booking.html'"><b>Book Now</b></button>
             </div>
         </div>
-        <div style="background-color: #c0289e; padding-top: 20px;padding-bottom: 40px;">
+
+        <div class="service-band band-magenta">
             <h2 class="headline">NAIL TREATMENTS</h2>
             <div class="ns">
                 <div class="nsI">
-                    <img src="../img/mani.jpg">
+                    <img src="../img/mani.jpg" alt="Manicure">
                     <p>Manicure<br>R250</p>
                 </div>
                 <div class="nsI">
-                    <img src="../img/n12.jpeg">
+                    <img src="../img/n12.jpeg" alt="Hand massage">
                     <p>Hand Massage<br>R100</p>
                 </div>
-                
             </div>
             <br>
             <div class="ns">
                 <div class="nsI">
-                    <img src="../img/n13.jpeg">
+                    <img src="../img/n13.jpeg" alt="Pedicure">
                     <p>Pedicure<br>R260</p>
                 </div>
                 <div class="nsI">
-                    <img src="../img/n14.jpeg">
+                    <img src="../img/n14.jpeg" alt="Nail repair">
                     <p>Nail Repair<br>R90</p>
                 </div>
             </div>
             <div class="bdbutton">
-                <button onclick="window.location.href='enquiry.html'"><b>Book Now</b></button>
+                <button onclick="window.location.href='booking.html'"><b>Book Now</b></button>
             </div>
         </div>
-         <footer>
+
+        <footer>
             <hr>
             <div class="footBox">
                 <div>
                     <h4>Quick Navigation</h4>
                     <a href="../index.html">Homepage</a><br>
-                    <a href="about.html">About us</a><br>
                     <a href="services.html">Services</a><br>
-                    <a href="enquiry.html">Enquries</a><br>
+                    <a href="booking.html">Booking</a><br>
+                    <a href="about.html">About us</a><br>
+                    <a href="enquiry.html">Enquiries</a><br>
                     <a href="contact.html">Contact us</a>
-
                 </div>
                 <div>
                     <h4>Connect with us</h4><br>
-                    <a href="https://www.instagram.com/grabbers_nails/" target="_blank">
-                    <img style="height: 50px; width: auto; max-width: 100%;" src="../img/instagram.png">
-                    <a href="https://www.tiktok.com/@grabbers_nails" target="_blank">
-                    <img style="height: 50px; width: auto; max-width: 100%;" src="../img/tiktok.png"></a>
-                </div><br>
+                    <a href="https://www.instagram.com/grabbers_nails/" target="_blank" rel="noopener">
+                        <img class="footIcon" src="../img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@grabbers_nails" target="_blank" rel="noopener">
+                        <img class="footIcon" src="../img/tiktok.png" alt="TikTok">
+                    </a>
+                </div>
             </div><br>
-            Copyright © 2026 Grabbers | Rights reserved | by Dillon <a href="contact.html">Contact us</a>
+            Copyright © 2026 Grabbers | Rights reserved | by Mr Fundamentals <a href="contact.html">Contact us</a>
         </footer>
     </body>
 </html>

@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>   
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Enquiries</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/png" href="../img/logo.png">
     </head>
     <body>
         <div class="banner">
             <input type="checkbox" id="navToggle" class="nav-toggle">
             <div class="banner-top">
-                <img src="../img/logo.png" >
-                <a href="index.html" style="text-decoration: none;"><h1 id="logoText">GRABBERS</h1></a>
-                <label for="navToggle" class="hamburger">
+                <img src="../img/logo.png" alt="Grabbers logo">
+                <a href="../index.html" style="text-decoration: none;"><h1 id="logoText">GRABBERS</h1></a>
+                <label for="navToggle" class="hamburger" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
             </div>
-        <!-- Below is the code for the website navigation where it links pages-->
             <nav>
                 <a href="../index.html">Homepage</a>
-                <a href="about.html">About us</a>
                 <a href="services.html">Services</a>
-                <a href="enquiry.html" style="color: #f0c14b;text-shadow: 0 0 6px currentColor;">Enquries</a>
+                <a href="booking.html">Booking</a>
+                <a href="about.html">About us</a>
+                <a href="enquiry.html" class="active">Enquiries</a>
                 <a href="contact.html">Contact us</a>
-            </nav>   
+            </nav>
         </div>
 
-        <div class="sectionText" style="background-color: #c0289e;">
-            <h2 class="headline">HAVE A QUESTION OR WANT TO BOOK?</h2>
-            <p>
-                <b>FILL OUT THE FORM BELOW AND WE'LL GET BACK TO YOU</b>
-            </p>
+        <div class="sectionText band-magenta">
+            <h2 class="headline">HAVE A QUESTION?</h2>
+            <p><b>FILL OUT THE FORM BELOW AND WE'LL GET BACK TO YOU</b></p>
         </div>
 
         <div class="enquiryWrap">
@@ -44,26 +45,19 @@
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-                <label for="service">Service Interested In</label>
+                <label for="service">Type of question</label>
                 <select id="service" name="service" required>
-                    <option value="">-- Select a service --</option>
-                    <option value="french-tips">French Tips</option>
-                    <option value="gel-polish">Gel Polish</option>
-                    <option value="acrylic-extensions">Acrylic Extensions</option>
-                    <option value="nail-art">Hand-Painted Nail Art</option>
-                    <option value="chrome-finishes">Chrome Finishes</option>
-                    <option value="3d-embellishments">3D Embellishments</option>
-                    <option value="manicure">Manicure</option>
-                    <option value="pedicure">Pedicure</option>
-                    <option value="other">Other / Not Sure</option>
+                    <option value="">-- Select an enquiry --</option>
+                    <option value="french-tips">Services offered</option>
+                    <option value="gel-polish">Products offered</option>
+                    <option value="acrylic-extensions">Working hours</option>
+                    <option value="nail-art">Available time slots</option>
+                    <option value="chrome-finishes">Looking for a job</option>
                 </select>
-
-                <label for="preferredDate">Preferred Date</label>
-                <input type="date" id="preferredDate" name="preferredDate">
 
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Tell us a bit more about what you're looking for..."></textarea>
-
+                <br>
                 <button type="submit">Submit Enquiry</button>
             </form>
         </div>
@@ -74,21 +68,23 @@
                 <div>
                     <h4>Quick Navigation</h4>
                     <a href="../index.html">Homepage</a><br>
-                    <a href="about.html">About us</a><br>
                     <a href="services.html">Services</a><br>
-                    <a href="enquiry.html">Enquries</a><br>
+                    <a href="booking.html">Booking</a><br>
+                    <a href="about.html">About us</a><br>
+                    <a href="enquiry.html">Enquiries</a><br>
                     <a href="contact.html">Contact us</a>
-
                 </div>
                 <div>
                     <h4>Connect with us</h4><br>
-                    <a href="https://www.instagram.com/grabbers_nails/" target="_blank">
-                    <img style="height: 50px; width: auto; max-width: 100%;" src="../img/instagram.png">
-                    <a href="https://www.tiktok.com/@grabbers_nails" target="_blank">
-                    <img style="height: 50px; width: auto; max-width: 100%;" src="../img/tiktok.png"></a>
-                </div><br>
+                    <a href="https://www.instagram.com/grabbers_nails/" target="_blank" rel="noopener">
+                        <img class="footIcon" src="../img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@grabbers_nails" target="_blank" rel="noopener">
+                        <img class="footIcon" src="../img/tiktok.png" alt="TikTok">
+                    </a>
+                </div>
             </div><br>
-            Copyright © 2026 Grabbers | Rights reserved | by Dillon <a href="contact.html">Contact us</a>
+            Copyright © 2026 Grabbers | Rights reserved | by Mr Fundamentals <a href="contact.html">Contact us</a>
         </footer>
     </body>
 </html>
