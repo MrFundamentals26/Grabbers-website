@@ -9,17 +9,19 @@ DMT2 Group 1
 Nhlamulo Gana
 
 # Project Overview
-A website is built using HTML for a business. The website consists of 6 pages with unique content, there's the home page, special orders, about section, contacts page, enquiry page and a products page.
+A website is built using HTML for a business. The website consists of 6 pages with unique content, there's the home page, booking page, about section, contacts page, enquiry page and a services page.
 
 # Goals and objectives 
 
-The goals for the business are to sell more products by getting new customers and to keep their customers informed to new changes to the menu. The objectives the website will be aiming for will be generating leads, providing useful information and making the business more reputable as a website can make any business feel more tangible. 
+The goals for the business are to increase visibility online and gain more customers, keep their customers informed to new changes to the services. The objectives the website will be aiming for will be generating leads, providing useful information and making the business more reputable as a website can make any business feel more tangible. 
 
 # Website features and functionality 
 
-The website will have 5 pages: 
+The website will have 6 pages: 
 
 Homepage – This will be the main page of the website which all visitors will see first. It will have the hero section which will showcase the main purpose of the business and a call to action. It will also serve as the center of navigating the website. 
+
+Booking page - This is where customers will select which service they want and book an appointment and get feedback on their booking.
 
 About us page – This page will have information about the history and process of the business such as how the business started and what and why they offer what they offer and even information about the founder so that visitors can be invested in the business. 
 
@@ -44,13 +46,15 @@ Unknown date November 2026 – Website is launched.
 # Part 1 Details
 2 proposals were created for different businesses to propose websites for them. A website will be created for one of the businesses. Part 1 focuses on the foundation of the website's structure. HTML structure is created and information about the website is put into the website. Then the whole project is uploaded into GitHub.
 
-# Part 2 details
+# Part 2 Details
 Part 2 focuses on CSS and styling the web pages and adding more content. the website will be designed for usability and attention catching.
 
-# Sitemap
-Homepage -> Services, About, Enquiry, Contact
+# Part 3 Details
+Part 3 will focus on adding functionality on the website using JavaScript and launching the website and making it discoverable by search engines.
 
-Services -> booking page (private)
+# Sitemap
+<img width="880" height="341" alt="image" src="https://github.com/user-attachments/assets/0ceb52bf-dffb-4c77-9099-bd623a3a7ce1" />
+
 
 # Changelog
 Part 1
@@ -231,6 +235,14 @@ Made website responsive to different devices
 v2.29 — September 18, 2026
 
 Added hamburger menu
+
+v3.0 October 28, 2026
+
+-Added booking page
+
+-Added Google form on booking page
+
+-Updated styling
 
 # References
 Bootswatch, 2026. Quartz. [Online] 
