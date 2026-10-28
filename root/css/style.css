@@ -780,3 +780,19 @@ textarea:focus-visible {
     border-radius: 4px;
     background: #fff;
 }
+
+/*About page accordian*/
+
+.accordian{
+    width: 300px;
+    
+}
+
+.accordianItem{
+    margin-bottom: 5px;
+}
+
+.accordianHeader{
+    background-color: #7c2f8e;
+   
+}
