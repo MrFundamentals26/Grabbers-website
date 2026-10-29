@@ -301,3 +301,6 @@ Available at: https://www.warmly.ai/p/blog/lead-generation-metrics#6-customer-ac
 Available at: https://www.wix.com/lp-en/hosting?utm_source=bing&utm_medium=cpc&utm_campaign=506226400^1271037187389242^search%20-%20bing%20rest&experiment_id=free%20domain%20hosting^b^^&msclkid=21b39fb6c8b2111a9c3ef5cde476bb8d 
 [Accessed 11 August 2026]. 
 
+xplodivity, 2023. How to easily build an accordion using JavaScript, Html & CSS. [online]
+Available at: https://youtu.be/Q3ipHIy-YG0?si=GWAgb2ZUUSVH4R_k
+[Accessed 29 October 2026].
