@@ -783,16 +783,111 @@ textarea:focus-visible {
 
 /*About page accordian*/
 
-.accordian{
-    width: 300px;
-    
+/* ============================================================
+   ABOUT PAGE — ACCORDION (fixed: no text clipping)
+   ============================================================ */
+
+.accordian {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.accordianItem{
-    margin-bottom: 5px;
+.accordianItem {
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #2a1033, #3b1746);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    transition: box-shadow 0.25s ease;
 }
 
-.accordianHeader{
-    background-color: #7c2f8e;
-   
+.accordianItem:hover {
+    box-shadow: 0 6px 20px rgba(192, 40, 158, 0.35);
+}
+
+.accordianHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--royal-purple), var(--magenta));
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    padding: 14px 18px;
+    cursor: pointer;
+    margin: 0;
+    user-select: none;
+    transition: background 0.2s ease;
+}
+
+.accordianHeader:hover {
+    background: linear-gradient(135deg, var(--magenta), var(--royal-purple));
+}
+
+.accordianHeader:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: -3px;
+}
+
+.accordianArrow {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--gold);
+    transition: transform 0.3s ease;
+}
+
+.accordianHeader.active .accordianArrow {
+    transform: rotate(45deg);
+}
+
+/* ---- Content: collapsed state ---- */
+/* NOTE: padding is present at ALL times so scrollHeight is stable.
+   We only animate max-height + opacity. This is what fixes clipping. */
+.accordianContent {
+    max-height: 0;
+    overflow: hidden;
+    padding: 14px 18px;            /* constant padding — never changes */
+    color: rgba(255,255,255,0.85);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    background: #3b1746;
+    border-top: 1px solid transparent;
+    opacity: 0;
+    transition:
+        max-height 0.4s ease,
+        opacity    0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* ---- Content: expanded state ---- */
+.accordianContent.active {
+    opacity: 1;
+    border-top-color: var(--panel-border);
+    /* max-height is set inline by JS to the real scrollHeight */
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .accordian {
+        max-width: 100%;
+        padding: 0 12px;
+    }
+
+    .accordianHeader {
+        font-size: 0.98rem;
+        padding: 12px 14px;
+    }
+
+    .accordianContent {
+        padding: 12px 14px;        /* keep constant, just narrower */
+        font-size: 0.92rem;
+    }
 }
