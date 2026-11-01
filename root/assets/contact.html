@@ -3,9 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+
+        <meta name="description" content="This page contains all of our contact details so that you can talk to us and we'lss get right back to you.">
+        <meta name="keywords" content="Grabbers nail salon, Grabbers contact, fancy nail designs, French tips, nail salon Johannesburg, manicure, pedicure">
+
+
+        <title>Contact Us | Grabbers Nail Salon in Braamfontein</title>
+
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" type="image/png" href="../img/logo.png">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
     </head>
     <body>
         <div class="banner">
@@ -70,7 +79,7 @@
             <div class="contact-card map-card">
                 <h3 class="headline">Visit Us</h3>
                 <p class="sectionText">Come find us at our physical location below.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0460577703916!2d28.035175076194115!3d-26.195179977082105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d9426fa1a19%3A0x83b4bca0a6b5cd19!2sWest%20Central%20Student%20Accommodation!5e0!3m2!1sen!2sza!4v1786692242975!5m2!1sen!2sza" width="100%" height="300" style="border:0; border-radius: 0 0 10px 10px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div id="map"></div>
             </div>
         </div>
 
@@ -98,5 +107,9 @@
             </div><br>
             Copyright © 2026 Grabbers | Rights reserved | by Mr Fundamentals <a href="contact.html">Contact us</a>
         </footer>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <script src="../js/js.js"></script>
     </body>
 </html>

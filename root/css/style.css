@@ -1008,3 +1008,11 @@ body.lightboxLocked {
 @media (prefers-reduced-motion: reduce) {
     .lightbox, .lightboxImg { transition: none; animation: none; }
 }
+
+/*Leaflet*/
+
+#map { height: 350px; 
+        width: 100%;
+        border-radius: 10px;
+}
+

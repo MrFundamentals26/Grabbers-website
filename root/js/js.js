@@ -205,3 +205,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }, { passive: true });
 });
+
+// leaflet
+
+const salonLocation = [-26.19518, 28.03518];
+
+const map = L.map('map').setView(salonLocation, 13);
+//open street map pictures
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+L.marker(salon)
+    .addTo(map)
+    .bindPopup(
+        '<b>Grabbers</b><br>Come visit us!<br>' +
+        '<a href="https://www.google.com/maps/dir/?api=1&destination=-26.19518,28.03518" target="_blank">Get directions</a>'
+    )
+    .openPopup();
+
