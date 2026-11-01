@@ -45,7 +45,7 @@ h2 { margin-top: 0; }
 
 a { color: var(--gold); }
 
-/* ---------------- Steam-style top banner ---------------- */
+/* Steam-style top banner */
 .banner{
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ nav a.active {
     text-shadow: 0 0 6px currentColor;
 }
 
-/* ---------------- Headlines ---------------- */
+/* Headlines */
 .headline{
     text-align: center;
     font-size: clamp(1.6rem, 6vw, 2.6rem);
@@ -157,7 +157,7 @@ nav a.active {
     padding: 0 12px;
 }
 
-/* ---------------- Hero ---------------- */
+/* Hero */
 .headliner{
     background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url(../img/head-img.jpg);
     background-repeat: no-repeat;
@@ -175,7 +175,7 @@ nav a.active {
     padding: 40px 0 70px;
 }
 
-/* ---------------- Buttons (Steam-esque) ---------------- */
+/* Buttons (Steam-esque) */
 .bdbutton{
     text-align: center;
     padding-bottom: 10px;
@@ -207,7 +207,7 @@ nav a.active {
     background: linear-gradient(135deg, #d439b0, #9337a8);
 }
 
-/* ---------------- Section label / category bar ---------------- */
+/* Section label / category bar */
 .section-label {
     text-align: center;
     color: #fff;
@@ -222,7 +222,7 @@ nav a.active {
     letter-spacing: 1px;
 }
 
-/* ---------------- Service cards ---------------- */
+/* Service cards */
 #Mainserv{
     display: flex;
     flex-direction: row;
@@ -263,25 +263,18 @@ nav a.active {
     background-image: linear-gradient(rgba(42,16,51,0.55), rgba(42,16,51,0.75)), url(../img/mani.jpg);
 }
 
-#serv:hover, #serv2:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 10px 28px rgba(192,40,158,0.5);
-}
+
 
 #minDesc1, #minDesc2{
     font-size: 0.8rem;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-    color: rgba(255,255,255,0.45);
+    color: rgb(255, 255, 255);
     transition: color 0.2s;
     margin: 6px 12px;
 }
 
-#serv:hover #minDesc1,
-#serv2:hover #minDesc2{
-    color: white;
-}
 
-/* ---------------- "What we do" panel ---------------- */
+/*  What we do panel */
 #ourWork{
     background: linear-gradient(180deg, rgba(124,47,142,0.55), rgba(42,16,51,0.95));
     padding-top: 60px;
@@ -313,7 +306,7 @@ nav a.active {
     text-shadow: 0 0 6px currentColor;
 }
 
-/* ---------------- Coloured bands ---------------- */
+/* Coloured bands */
 .band-purple { background: rgba(124,47,142,0.35); padding: 16px 0; border-radius: 6px; }
 .band-magenta { background: rgba(192,40,158,0.4); padding: 16px 0; border-radius: 6px; }
 
@@ -327,7 +320,7 @@ nav a.active {
     margin: 20px auto;
 }
 
-/* ---------------- About page ---------------- */
+/* About page */
 .about-story {
     background: rgba(74, 21, 82, 0.5);
     padding: 20px;
@@ -355,7 +348,7 @@ nav a.active {
     border: 1px solid var(--panel-border);
 }
 
-/* ---------------- Socials ---------------- */
+/* Socials */
 .socials{
     display: flex;
     flex-direction: row;
@@ -388,7 +381,7 @@ nav a.active {
     margin-top: 8px;
 }
 
-/* ---------------- Marquee ---------------- */
+/* Marquee */
 .marquee-wrap {
     overflow: hidden;
     white-space: nowrap;
@@ -417,7 +410,7 @@ nav a.active {
     to { transform: translateX(-50%); }
 }
 
-/* ---------------- Services grid ---------------- */
+/* Services grid */
 .service-band {
     padding: 20px 0 30px;
     margin-top: 10px;
@@ -455,7 +448,7 @@ nav a.active {
     border: 1px solid var(--panel-border);
 }
 
-/* ---------------- Enquiry form ---------------- */
+/* Enquiry form */
 .enquiryWrap {
     display: flex;
     justify-content: center;
@@ -503,7 +496,7 @@ nav a.active {
     resize: vertical;
 }
 
-/* ---------------- Footer ---------------- */
+/* Footer */
 footer{
     text-align: center;
     background: #160a1c;
@@ -539,7 +532,7 @@ footer a:hover{
     margin: 4px;
 }
 
-/* ---------------- Contact page ---------------- */
+/* Contact page */
 .contact-wrap {
     display: flex;
     flex-direction: row;
@@ -596,7 +589,7 @@ footer a:hover{
     color: #fff;
 }
 
-/* ---------------- Focus states ---------------- */
+/* Focus states */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -754,7 +747,7 @@ textarea:focus-visible {
     * { transition: none !important; }
 }
 
-/* ---------------- Booking page ---------------- */
+/* Booking page */
 .bookingWrap {
     display: flex;
     justify-content: center;
@@ -783,9 +776,9 @@ textarea:focus-visible {
 
 /*About page accordian*/
 
-/* ============================================================
+/*
    ABOUT PAGE — ACCORDION (fixed: no text clipping)
-   ============================================================ */
+ */
 
 .accordian {
     width: 100%;
@@ -890,4 +883,128 @@ textarea:focus-visible {
         padding: 12px 14px;        /* keep constant, just narrower */
         font-size: 0.92rem;
     }
+}
+
+/* LIGHTBOX */
+body.lightboxLocked {
+    overflow: hidden;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 40px 20px;
+    background: rgba(10, 4, 14, 0.92);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.lightbox.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightboxImg {
+    max-width: min(92vw, 1100px);
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid var(--panel-border);
+    box-shadow: 0 10px 50px rgba(192, 40, 158, 0.4);
+    background: #160a1c;
+    animation: lbFade 0.35s ease;
+}
+
+@keyframes lbFade {
+    from { opacity: 0; transform: scale(0.96); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+.lightboxCaption {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 70ch;
+    margin: 0;
+    padding: 0 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Controls */
+.lightboxClose,
+.lightboxNav {
+    position: absolute;
+    background: rgba(42, 16, 51, 0.85);
+    color: var(--gold);
+    border: 1px solid var(--panel-border);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    z-index: 1;
+}
+
+.lightboxClose:hover,
+.lightboxNav:hover {
+    background: linear-gradient(135deg, var(--magenta), var(--royal-purple));
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(240, 193, 75, 0.6);
+}
+
+.lightboxClose {
+    top: 20px;
+    right: 20px;
+    font-size: 1.8rem;
+}
+
+.lightboxPrev { left: 20px; }
+.lightboxNext { right: 20px; }
+
+.lightboxClose:focus-visible,
+.lightboxNav:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .lightbox { padding: 30px 12px; }
+
+    .lightboxImg { max-height: 72vh; }
+
+    .lightboxClose,
+    .lightboxNav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+
+    .lightboxClose { top: 12px; right: 12px; }
+    .lightboxPrev  { left: 8px;  top: 50%; transform: translateY(-50%); }
+    .lightboxNext  { right: 8px; top: 50%; transform: translateY(-50%); }
+
+    .lightboxPrev:hover,
+    .lightboxNext:hover { transform: translateY(-50%) scale(1.08); }
+
+    .lightboxCaption { font-size: 0.9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lightbox, .lightboxImg { transition: none; animation: none; }
 }
