@@ -248,6 +248,10 @@ v3.1 October 29, 2026
 
 Added accordion on about us page
 
+v3.2 October 30, 2026
+
+Added lightboxes to services page
+
 # References
 Bootswatch, 2026. Quartz. [Online] 
 Available at: https://bootswatch.com/quartz/#top
