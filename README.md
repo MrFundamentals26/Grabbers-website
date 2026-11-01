@@ -252,6 +252,14 @@ v3.2 October 30, 2026
 
 Added lightboxes to services page
 
+v3.3 November 2, 2026
+
+-Added SEO keywords and descriptions on every page
+
+-Added an interactive map through Leaflet
+
+-Renamed all images so that names are more descriptive
+
 # References
 Bootswatch, 2026. Quartz. [Online] 
 Available at: https://bootswatch.com/quartz/#top
@@ -280,6 +288,10 @@ Available at: https://www.hostinger.com/domain-name-search?utm_id=677940938&mscl
 Just Nails, 2026. luxury Nails with golden touch. [Online] 
 Available at: https://pin.it/1WcjhWLTJ
 [Accessed 15 September 2026].
+
+Leaflet, 2026. Leaflet Quick Start Guide. [online]
+Available at: https://leafletjs.com/examples/quick-start/
+[Accessed 2 November 2026].
 
 Magnific, 2026. Instagram icon. [Online]
 Available at: https://www.flaticon.com/free-icons/instagram-logo" 
