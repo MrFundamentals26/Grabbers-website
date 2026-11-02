@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+
+Disallow: /css/
+Disallow: /js/
+
+
+Sitemap: https://grabbers.netlify.app/sitemap.xml

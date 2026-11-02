@@ -550,8 +550,8 @@ footer a:hover{
     border-radius: 6px;
     padding: 20px;
     width: 100%;
-    max-width: 360px;
-    flex: 1 1 300px;
+    max-width: 460px;
+    flex: 1 1 340px;
 }
 
 .contact-list {
@@ -619,6 +619,9 @@ textarea:focus-visible {
 
 /* Phones (max 768px) */
 @media (max-width: 768px) {
+
+        .mapWrap iframe { height: 260px; }
+        #formStatus { font-size: 0.85rem; }
 
         .bookingWrap {
         padding: 15px 10px 40px;
@@ -1011,8 +1014,238 @@ body.lightboxLocked {
 
 /*Leaflet*/
 
-#map { height: 350px; 
-        width: 100%;
-        border-radius: 10px;
+/* ============================================================
+   LEAFLET MAP
+   - .mapWrap traps Leaflet's internal z-indexes (panes can go
+     up to 800) so the sticky banner (z-index: 50) always stays
+     on top when the user scrolls.
+   - isolation: isolate creates a new stacking context so child
+     z-indexes are contained inside the wrapper.
+   ============================================================ */
+.mapWrap {
+    position: relative;
+    isolation: isolate;               /* contain Leaflet's stacking context */
+    z-index: 0;                       /* lower than the banner's 50 */
+    margin-top: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    background: #160a1c;
 }
 
+#map {
+    height: 350px;
+    width: 100%;
+    background: #2a1033;              /* dark tile-loading background */
+}
+
+/* Cap Leaflet's internal pane z-indexes so nothing inside can
+   ever exceed the banner's stacking level. */
+.mapWrap .leaflet-pane,
+.mapWrap .leaflet-top,
+.mapWrap .leaflet-bottom {
+    z-index: 5 !important;
+}
+
+.mapWrap .leaflet-pane.leaflet-popup-pane {
+    z-index: 10 !important;
+}
+
+/* Dark-theme the popup + controls so they match your site */
+.mapWrap .leaflet-popup-content-wrapper,
+.mapWrap .leaflet-popup-tip {
+    background: #2a1033;
+    color: #fff;
+    border: 1px solid var(--panel-border);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+}
+
+.mapWrap .leaflet-popup-content b {
+    color: var(--gold);
+}
+
+.mapWrap .leaflet-control-zoom a {
+    background: #2a1033;
+    color: var(--gold);
+    border-color: var(--panel-border);
+}
+
+.mapWrap .leaflet-control-zoom a:hover {
+    background: var(--magenta);
+    color: #fff;
+}
+
+.mapWrap .leaflet-control-attribution {
+    background: rgba(22, 10, 28, 0.8);
+    color: rgba(255,255,255,0.6);
+}
+
+.mapWrap .leaflet-control-attribution a {
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    #map { height: 260px; }
+}
+
+/*contact form*/
+
+#contactForm {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+.enquiryForm .error {
+    color: #ff9aa2;
+    font-size: 0.85rem;
+    min-height: 1.1em;
+    margin-top: 4px;
+    display: block;
+}
+
+.enquiryForm input.invalid,
+.enquiryForm select.invalid,
+.enquiryForm textarea.invalid {
+    border: 2px solid #ff6b81;
+}
+
+.enquiryForm #charCount {
+    color: rgba(255,255,255,0.7);
+    text-align: right;
+    margin-top: 4px;
+    display: block;
+}
+
+.enquiryForm .radioGroup {
+    border: none;
+    padding: 0;
+    margin: 15px 0 0;
+    min-width: 0;
+}
+
+.enquiryForm legend {
+    color: white;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.enquiryForm label.inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.enquiryForm label.consent {
+    margin-top: 20px;
+}
+
+.enquiryForm input[type="radio"],
+.enquiryForm input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    accent-color: var(--magenta);
+}
+
+#formStatus {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 4px 0;
+    font-size: 0.9rem;
+    min-height: 1.2em;
+    word-break: break-word;
+}
+
+#formStatus.success { color: #6ff09a; }
+#formStatus.failure { color: #ff8fa3; }
+#formStatus a { color: var(--gold); text-decoration: underline; }
+#formStatus a:hover { text-shadow: 0 0 6px currentColor; }
+
+/*Enquiry form*/
+#enquiryForm .error {
+    color: #ff9aa2;
+    font-size: 0.85rem;
+    min-height: 1.1em;
+    margin-top: 4px;
+    display: block;
+}
+
+#enquiryForm input.invalid,
+#enquiryForm select.invalid,
+#enquiryForm textarea.invalid {
+    border: 2px solid #ff6b81;
+}
+
+#enquiryStatus {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0 0;
+    font-size: 1rem;
+    color: var(--gold);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 4, 14, 0.85);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Modal Box */
+.modal-content {
+    background: linear-gradient(180deg, #2a1033, #3b1746);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(192, 40, 158, 0.4);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-content h3 {
+    color: var(--gold);
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-shadow: 0 0 8px rgba(240, 193, 75, 0.4);
+}
+
+#modalResponseText {
+    color: #fff;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#modalResponseText b {
+    color: var(--cyan-glow);
+}

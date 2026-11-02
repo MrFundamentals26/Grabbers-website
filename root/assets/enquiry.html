@@ -3,11 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <meta name="description" content="Feel free to ask us any questions about our nail salon whether if it is about appointments, prices or available jobs.">
         <meta name="keywords" content="nail salon around Braamfontein, cheap nail salon, nail salon job in Braam, affordable manicure in Braam, Grabbers jobs">
-
-
         <title>Enquiries | Grabbers Nail Salon in Braamfontein</title>
 
         <link rel="stylesheet" href="../css/style.css">
@@ -41,31 +38,51 @@
         </div>
 
         <div class="enquiryWrap">
-            <form class="enquiryForm" action="#" method="post">
-                <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <form class="enquiryForm" id="enquiryForm" novalidate>
+                <label for="enqName">Full Name</label>
+                <input type="text" id="enqName" name="name" placeholder="Enter your full name" required minlength="2" maxlength="50">
+                <span class="error" id="nameError"></span>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="enqEmail">Email Address</label>
+                <input type="email" id="enqEmail" name="email" placeholder="Enter your email" required>
+                <span class="error" id="emailError"></span>
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <label for="enqPhone">Phone Number</label>
+                <input type="tel" id="enqPhone" name="phone" placeholder="e.g. 079 523 6411" required>
+                <span class="error" id="phoneError"></span>
 
-                <label for="service">Type of question</label>
-                <select id="service" name="service" required>
-                    <option value="">-- Select an enquiry --</option>
-                    <option value="french-tips">Services offered</option>
-                    <option value="gel-polish">Products offered</option>
-                    <option value="acrylic-extensions">Working hours</option>
-                    <option value="nail-art">Available time slots</option>
-                    <option value="chrome-finishes">Looking for a job</option>
+                <label for="enqService">Service / Topic</label>
+                <select id="enqService" name="service" required>
+                    <option value="">-- Select a topic --</option>
+                    <optgroup label="Pricing & Availability">
+                        <option value="gel-nails">Gel Nails Price</option>
+                        <option value="acrylics">Acrylic Extensions Price</option>
+                        <option value="french-tips">French Tips Price</option>
+                        <option value="pedicure">Pedicure Availability</option>
+                    </optgroup>
+                    <optgroup label="Careers & Other">
+                        <option value="job">Looking for a job</option>
+                        <option value="other">General Question</option>
+                    </optgroup>
                 </select>
+                <span class="error" id="serviceError"></span>
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Tell us a bit more about what you're looking for..."></textarea>
-                <br>
-                <button type="submit">Submit Enquiry</button>
+                <label for="enqMessage">Your Message</label>
+                <textarea id="enqMessage" name="message" rows="5" placeholder="Tell us a bit more about what you're looking for..." required minlength="10" maxlength="500"></textarea>
+                <span class="error" id="messageError"></span>
+
+                <button type="submit" id="submitBtn">Submit Enquiry</button>
+                <p id="enquiryStatus" role="status"></p>
             </form>
+        </div>
+
+        <!-- Modal for the Dynamic Response -->
+        <div id="responseModal" class="modal-overlay">
+            <div class="modal-content">
+                <h3>Enquiry Received!</h3>
+                <div id="modalResponseText"></div>
+                <button type="button" class="closeModalBtn callbackBtn">Close</button>
+            </div>
         </div>
 
         <footer>
@@ -92,5 +109,7 @@
             </div><br>
             Copyright © 2026 Grabbers | Rights reserved | by Mr Fundamentals <a href="contact.html">Contact us</a>
         </footer>
+        
+        <script src="../js/js.js"></script>
     </body>
 </html>

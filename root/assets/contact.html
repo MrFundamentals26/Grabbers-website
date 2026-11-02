@@ -4,17 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="description" content="This page contains all of our contact details so that you can talk to us and we'lss get right back to you.">
+        <meta name="description" content="This page contains all of our contact details so that you can talk to us and we'll get right back to you.">
         <meta name="keywords" content="Grabbers nail salon, Grabbers contact, fancy nail designs, French tips, nail salon Johannesburg, manicure, pedicure">
-
 
         <title>Contact Us | Grabbers Nail Salon in Braamfontein</title>
 
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" type="image/png" href="../img/logo.png">
+
+        <!-- Leaflet CSS -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin=""/>
+              integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+              crossorigin=""/>
     </head>
     <body>
         <div class="banner">
@@ -52,13 +53,62 @@
                     <li><span>Customer Service</span> - 081 569 8667</li>
                     <li><span>Email</span> - st10480197@rcconnect.edu.za</li>
                 </ul>
-                <div>
-                    <b>Or leave your number and we'll contact you</b>
-                    <div class="callback-input">
-                        <input type="text" placeholder="Enter your phone number" aria-label="Phone number for callback">
-                        <button type="button" class="callbackBtn">Send</button>
-                    </div>
-                </div>
+
+                <p style="margin-top: 20px;"><b>Or fill in the form below and we'll get back to you.</b></p>
+
+                <form class="enquiryForm" id="contactForm" name="contact" method="POST"
+                      action="/contact.html"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field"
+                      novalidate>
+
+                    <input type="hidden" name="form-name" value="contact">
+
+                    <p hidden>
+                        <label>Don't fill this out: <input name="bot-field"></label>
+                    </p>
+
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required minlength="2" maxlength="60" autocomplete="name">
+                    <span class="error" id="fullNameError"></span>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+                    <span class="error" id="emailError"></span>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 079 523 6411" required autocomplete="tel">
+                    <span class="error" id="phoneError"></span>
+
+                    <label for="messageType">Type of message</label>
+                    <select id="messageType" name="messageType" required>
+                        <option value="">-- Select a message type --</option>
+                        <option value="General question">General question</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Compliment">Compliment</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error" id="messageTypeError"></span>
+
+                    <fieldset class="radioGroup">
+                        <legend>How should we reply?</legend>
+                        <label class="inline"><input type="radio" name="replyMethod" value="Email"> Email</label>
+                        <label class="inline"><input type="radio" name="replyMethod" value="Phone"> Phone</label>
+                        <span class="error" id="replyMethodError"></span>
+                    </fieldset>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us more" required minlength="10" maxlength="500"></textarea>
+                    <small id="charCount">0 / 500</small>
+                    <span class="error" id="messageError"></span>
+
+                    <label class="inline consent"><input type="checkbox" id="consent" name="consent" value="yes"> I agree to be contacted about this message</label>
+                    <span class="error" id="consentError"></span>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <p id="formStatus" role="status" aria-live="polite"></p>
             </div>
 
             <div class="contact-card social-card">
@@ -76,10 +126,13 @@
                 </div>
             </div>
 
-            <div class="contact-card map-card">
+            <div class="contact-card map-card" style="text-align: center;">
                 <h3 class="headline">Visit Us</h3>
                 <p class="sectionText">Come find us at our physical location below.</p>
-                <div id="map"></div>
+                <div class="mapWrap">
+                    <div id="map"></div>
+                </div>
+                <button type="button" id="locateBtn" class="callbackBtn" style="margin-top: 12px;">Show my location</button>
             </div>
         </div>
 
@@ -107,9 +160,11 @@
             </div><br>
             Copyright © 2026 Grabbers | Rights reserved | by Mr Fundamentals <a href="contact.html">Contact us</a>
         </footer>
+
+        <!-- Leaflet JS -->
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""></script>
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin=""></script>
         <script src="../js/js.js"></script>
     </body>
 </html>
