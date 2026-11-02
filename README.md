@@ -260,6 +260,15 @@ v3.3 November 2, 2026
 
 -Renamed all images so that names are more descriptive
 
+v3.4 November 2, 2026
+
+-Completed Leaflet interactive map
+
+-Contact form information gets sent into my email
+
+-Enquiry form has modal that updates customer on prices
+
+
 # References
 Bootswatch, 2026. Quartz. [Online] 
 Available at: https://bootswatch.com/quartz/#top
